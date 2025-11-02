@@ -1,0 +1,370 @@
+/* ============================================
+   HALAMAN FAKULTAS - MA'SOEM UNIVERSITY
+   Style khusus untuk halaman daftar fakultas
+   ============================================ */
+
+/* ============================================
+   PAGE HEADER - Header halaman dengan breadcrumb
+   ============================================ */
+.page-header {
+    background: linear-gradient(135deg, #2c5aa0, #1e88e5);
+    padding: 60px 20px 80px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Pattern background */
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300"><circle cx="100" cy="100" r="80" fill="rgba(255,193,7,0.1)"/><circle cx="1100" cy="200" r="100" fill="rgba(255,193,7,0.1)"/></svg>') no-repeat;
+    opacity: 0.5;
+}
+
+.page-header .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+    font-size: 14px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.breadcrumb a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.breadcrumb a:hover {
+    opacity: 0.7;
+}
+
+.breadcrumb span {
+    margin: 0 8px;
+}
+
+/* Judul Halaman */
+.page-header h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.page-header p {
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+
+/* ============================================
+   FAKULTAS SECTION - Daftar Fakultas
+   ============================================ */
+.fakultas-section {
+    padding: 80px 20px;
+    background: #f8f9fa;
+}
+
+/* Item Fakultas Individual */
+.fakultas-item {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    margin-bottom: 40px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    transition: box-shadow 0.3s;
+}
+
+.fakultas-item:hover {
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+/* Gambar/Icon Fakultas */
+.fakultas-image {
+    background: linear-gradient(135deg, #2c5aa0, #1e88e5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+}
+
+/* Jika menggunakan gambar asli, uncomment kode berikut:
+.fakultas-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+*/
+
+.fakultas-icon {
+    font-size: 120px;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.2));
+}
+
+/* Konten Fakultas */
+.fakultas-content {
+    padding: 40px;
+}
+
+.fakultas-content h2 {
+    color: #2c5aa0;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Deskripsi Fakultas */
+.fakultas-desc {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+/* Daftar Program Studi */
+.prodi-list {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border-left: 4px solid #2c5aa0;
+}
+
+.prodi-list h4 {
+    color: #2c5aa0;
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.prodi-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.prodi-list ul li {
+    padding: 8px 0;
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Box Keunggulan */
+.keunggulan-box {
+    margin-bottom: 25px;
+}
+
+.keunggulan-box h4 {
+    color: #2c5aa0;
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+/* Tags Keunggulan */
+.keunggulan-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.keunggulan-tags span {
+    background: #e3f2fd;
+    color: #2c5aa0;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid #bbdefb;
+}
+
+/* Tombol Detail */
+.btn-detail {
+    display: inline-block;
+    background: #2c5aa0;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.3s;
+    font-size: 14px;
+}
+
+.btn-detail:hover {
+    background: #1e3c72;
+    transform: translateX(5px);
+}
+
+
+/* ============================================
+   CTA SECTION - Call to Action
+   ============================================ */
+.cta-section {
+    padding: 80px 20px;
+    background: white;
+}
+
+.cta-box {
+    background: linear-gradient(135deg, #2c5aa0, #1e88e5);
+    padding: 60px 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 40px rgba(44,90,160,0.3);
+}
+
+.cta-box h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.cta-box p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.95;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Tombol CTA */
+.btn-cta {
+    display: inline-block;
+    background: #ffc107;
+    color: #2c5aa0;
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 5px 20px rgba(255,193,7,0.3);
+}
+
+.btn-cta:hover {
+    background: #ffb300;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255,193,7,0.4);
+}
+
+
+/* ============================================
+   RESPONSIVE DESIGN - Mobile & Tablet
+   ============================================ */
+
+/* Tablet (max-width: 968px) */
+@media (max-width: 968px) {
+    .page-header h1 {
+        font-size: 32px;
+    }
+
+    /* Fakultas Item menjadi 1 kolom */
+    .fakultas-item {
+        grid-template-columns: 1fr;
+    }
+
+    .fakultas-image {
+        padding: 60px 40px;
+    }
+
+    .fakultas-icon {
+        font-size: 100px;
+    }
+
+    .fakultas-content {
+        padding: 30px;
+    }
+
+    .cta-box h2 {
+        font-size: 28px;
+    }
+}
+
+/* Mobile Kecil (max-width: 480px) */
+@media (max-width: 480px) {
+    .page-header {
+        padding: 40px 20px 60px;
+    }
+
+    .page-header h1 {
+        font-size: 24px;
+    }
+
+    .page-header p {
+        font-size: 16px;
+    }
+
+    .fakultas-content h2 {
+        font-size: 22px;
+    }
+
+    .fakultas-desc {
+        font-size: 14px;
+    }
+
+    .fakultas-icon {
+        font-size: 80px;
+    }
+
+    .keunggulan-tags span {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .cta-box {
+        padding: 40px 20px;
+    }
+
+    .cta-box h2 {
+        font-size: 24px;
+    }
+
+    .cta-box p {
+        font-size: 16px;
+    }
+}
+
+
+/* ============================================
+   VARIASI WARNA FAKULTAS (Opsional)
+   Bisa digunakan untuk membedakan fakultas
+   ============================================ */
+
+/* Ekonomi & Bisnis Islam - Biru */
+.fakultas-item:nth-child(1) .fakultas-image {
+    background: linear-gradient(135deg, #2c5aa0, #1e88e5);
+}
+
+/* Ilmu Komputer - Cyan */
+.fakultas-item:nth-child(2) .fakultas-image {
+    background: linear-gradient(135deg, #00897b, #00acc1);
+}
+
+/* Pertanian - Hijau */
+.fakultas-item:nth-child(3) .fakultas-image {
+    background: linear-gradient(135deg, #43a047, #66bb6a);
+}
+
+/* Keguruan & Pendidikan - Orange */
+.fakultas-item:nth-child(4) .fakultas-image {
+    background: linear-gradient(135deg, #fb8c00, #ffa726);
+}
+
+/* Teknik - Abu-abu Gelap */
+.fakultas-item:nth-child(5) .fakultas-image {
+    background: linear-gradient(135deg, #455a64, #607d8b);
+}

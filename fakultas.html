@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakultas - Ma'soem University</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fakultas.css">
+</head>
+<body>
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <div class="social-icons">
+                <a href="#" title="Twitter">𝕏</a>
+                <a href="#" title="YouTube">▶</a>
+                <a href="#" title="Instagram">📷</a>
+                <a href="#" title="Email">✉</a>
+                <a href="#" title="WhatsApp">📱</a>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Kata kunci">
+                <button>🔍</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-img">U</div>
+                <div class="logo-text">
+                    <h1>MA'SOEM</h1>
+                    <p>UNIVERSITY</p>
+                </div>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="#tentang">Tentang Kami</a></li>
+                    <li><a href="fakultas.html">Fakultas</a></li>
+                    <li><a href="#informasi">Informasi</a></li>
+                    <li><a href="#lppm">LPPM</a></li>
+                    <li><a href="#siakad">SIAKAD</a></li>
+                    <li><a href="#pendaftaran">Pendaftaran</a></li>
+                    <li><a href="#berita">Berita</a></li>
+                    <li><a href="#kontak">Kontak Kami</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE HEADER - Breadcrumb & Judul -->
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Beranda</a> <span>/</span> <span>Fakultas</span>
+            </div>
+            <h1>Fakultas di Ma'soem University</h1>
+            <p>Pilih program studi yang sesuai dengan minat dan passion Anda</p>
+        </div>
+    </section>
+
+    <!-- FAKULTAS LIST - Daftar 5 Fakultas -->
+    <section class="fakultas-section">
+        <div class="container">
+            
+            <!-- Fakultas 1: Ekonomi dan Bisnis Islam -->
+            <div class="fakultas-item">
+                <div class="fakultas-image">
+                    <!-- Icon/Gambar Fakultas - bisa diganti dengan gambar asli -->
+                    <div class="fakultas-icon"></div>
+                </div>
+                <div class="fakultas-content">
+                    <h2>Fakultas Ekonomi dan Bisnis Islam</h2>
+                    <p class="fakultas-desc">
+                        Fakultas Ekonomi dan Bisnis Islam menghasilkan lulusan yang menguasai ilmu ekonomi syariah, keuangan Islam, dan bisnis modern berbasis nilai-nilai keislaman. Program studi dirancang untuk mencetak profesional di bidang perbankan syariah, manajemen bisnis, dan konsultan keuangan.
+                    </p>
+                    
+                    <!-- Program Studi -->
+                    <div class="prodi-list">
+                        <h4>Program Studi:</h4>
+                        <ul>
+                            <li>🎓 S1 Manajemen Bisnis Syariah</li>
+                            <li>🎓 S1 Perbankan Syariah</li>
+                        </ul>
+                    </div>
+
+                    <!-- Keunggulan -->
+                    <div class="keunggulan-box">
+                        <h4>Keunggulan:</h4>
+                        <div class="keunggulan-tags">
+                            <span>✓ Praktisi Keuangan Syariah</span>
+                            <span>✓ Wirausahawan Syariah</span>
+                            <span>✓ Pasar Modal & Investasi</span>
+                            <span>✓ Program MSIB</span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn-detail">Lihat Detail Fakultas →</a>
+                </div>
+            </div>
+
+            <!-- Fakultas 2: Komputer -->
+            <div class="fakultas-item">
+                <div class="fakultas-image">
+                    <div class="fakultas-icon"></div>
+                </div>
+                <div class="fakultas-content">
+                    <h2>Fakultas Ilmu Komputer</h2>
+                    <p class="fakultas-desc">
+                        Fakultas Ilmu Komputer fokus pada pengembangan teknologi informasi, software engineering, dan data science. Lulusan kami siap menjadi developer, data analyst, cyber security specialist, dan tech entrepreneur di era digital.
+                    </p>
+                    
+                    <div class="prodi-list">
+                        <h4>Program Studi:</h4>
+                        <ul>
+                            <li>🎓 S1 Bisnis Digital</li>
+                            <li>🎓 S1 Sistem Informasi</li>
+                            <li>🎓 D3 Komputerisasi Akuntansi</li>
+                        </ul>
+                    </div>
+
+                    <div class="keunggulan-box">
+                        <h4>Keunggulan:</h4>
+                        <div class="keunggulan-tags">
+                            <span>✓ Lab Komputer Modern</span>
+                            <span>✓ Kerjasama Industri IT</span>
+                            <span>✓ Bootcamp Programming</span>
+                            <span>✓ Sertifikasi Internasional</span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn-detail">Lihat Detail Fakultas →</a>
+                </div>
+            </div>
+
+            <!-- Fakultas 3: Pertanian -->
+            <div class="fakultas-item">
+                <div class="fakultas-image">
+                    <div class="fakultas-icon"></div>
+                </div>
+                <div class="fakultas-content">
+                    <h2>Fakultas Pertanian</h2>
+                    <p class="fakultas-desc">
+                        Fakultas Pertanian mengintegrasikan ilmu pertanian modern dengan teknologi berkelanjutan. Kami mencetak ahli agronomi, teknologi pangan, dan agribisnis yang mampu meningkatkan produktivitas pertanian Indonesia dengan pendekatan ramah lingkungan.
+                    </p>
+                    
+                    <div class="prodi-list">
+                        <h4>Program Studi:</h4>
+                        <ul>
+                            <li>🎓 S1 Agribisnis</li>
+                            <li>🎓 S1 Teknologi Pangan</li>
+                        </ul>
+                    </div>
+
+                    <div class="keunggulan-box">
+                        <h4>Keunggulan:</h4>
+                        <div class="keunggulan-tags">
+                            <span>✓ Green House Modern</span>
+                            <span>✓ Smart Farming</span>
+                            <span>✓ Kerjasama Petani</span>
+                            <span>✓ Penelitian Berkelanjutan</span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn-detail">Lihat Detail Fakultas →</a>
+                </div>
+            </div>
+
+            <!-- Fakultas 4: Keguruan & Ilmu Pendidikan -->
+            <div class="fakultas-item">
+                <div class="fakultas-image">
+                    <div class="fakultas-icon"></div>
+                </div>
+                <div class="fakultas-content">
+                    <h2>Fakultas Keguruan & Ilmu Pendidikan</h2>
+                    <p class="fakultas-desc">
+                        Fakultas Keguruan dan Ilmu Pendidikan (FKIP) mencetak pendidik profesional yang kompeten, inovatif, dan berakhlak mulia. Program kami mempersiapkan calon guru dengan metode pembelajaran modern dan nilai-nilai karakter yang kuat.
+                    </p>
+                    
+                    <div class="prodi-list">
+                        <h4>Program Studi:</h4>
+                        <ul>
+                            <li>🎓 S1 Pendidikan Bahasa Inggris</li>
+                            <li>🎓 S1 Bimbingan dan Konseling /li>
+                        </ul>
+                    </div>
+
+                    <div class="keunggulan-box">
+                        <h4>Keunggulan:</h4>
+                        <div class="keunggulan-tags">
+                            <span>✓ PPL di Sekolah Unggulan</span>
+                            <span>✓ Microteaching Lab</span>
+                            <span>✓ Sertifikasi Guru</span>
+                            <span>✓ Metode Pembelajaran Inovatif</span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn-detail">Lihat Detail Fakultas →</a>
+                </div>
+            </div>
+
+            <!-- Fakultas 5: Teknik -->
+            <div class="fakultas-item">
+                <div class="fakultas-image">
+                    <div class="fakultas-icon"></div>
+                </div>
+                <div class="fakultas-content">
+                    <h2>Fakultas Teknik</h2>
+                    <p class="fakultas-desc">
+                        Fakultas Teknik menghasilkan insinyur handal yang menguasai teknologi industri modern. Dengan kurikulum berbasis industri 4.0, lulusan kami siap berkontribusi dalam pembangunan infrastruktur dan pengembangan teknologi di Indonesia.
+                    </p>
+                    
+                    <div class="prodi-list">
+                        <h4>Program Studi:</h4>
+                        <ul>
+                            <li>🎓 S1 Teknik Informatika</li>
+                            <li>🎓 S1 Teknik Industri</li>
+                        </ul>
+                    </div>
+
+                    <div class="keunggulan-box">
+                        <h4>Keunggulan:</h4>
+                        <div class="keunggulan-tags">
+                            <span>✓ Laboratorium Lengkap</span>
+                            <span>✓ Workshop & Studio</span>
+                            <span>✓ Proyek Industri</span>
+                            <span>✓ Sertifikasi Profesi</span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn-detail">Lihat Detail Fakultas →</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Tertarik Bergabung dengan Kami?</h2>
+                <p>Daftarkan diri Anda sekarang dan raih masa depan gemilang bersama Ma'soem University</p>
+                <a href="#" class="btn-cta">Daftar Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Ma'soem University</h3>
+                <p>Universitas terkemuka yang berkomitmen untuk memberikan pendidikan berkualitas tinggi dengan nilai-nilai Islam dan profesionalisme. Kami membentuk generasi pemimpin masa depan yang berintegritas dan kompeten.</p>
+                <div class="footer-social">
+                    <a href="#"><img src="WA.png" alt="WhatsApp" width="50"></a>
+                    <a href="#"><img src="IG.png" alt="Instagram" width="50"></a>
+                    <a href="#"><img src="YT.png" alt="YouTube" width="50"></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Link Cepat</h3>
+                <ul class="footer-links">
+                    <li><a href="#tentang">Tentang Kami</a></li>
+                    <li><a href="fakultas.html">Fakultas</a></li>
+                    <li><a href="#pendaftaran">Pendaftaran</a></li>
+                    <li><a href="#siakad">Portal Mahasiswa</a></li>
+                    <li><a href="#berita">Berita & Artikel</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Kontak</h3>
+                <ul class="footer-links">
+                    <li>📍 Jl. Raya Cipacing No. 22, Jatinangor</li>
+                    <li>📞 (022) 7798340</li>
+                    <li>✉ info@masoem.ac.id</li>
+                    <li>🕒 Senin - Jumat: 08:00 - 16:00</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Ma'soem University. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('active');
+        }
+
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mainNav').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>x
